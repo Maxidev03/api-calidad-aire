@@ -50,14 +50,3 @@ def obtener_mediciones():
         return jsonify(resultados)
     except Exception as e:
         return jsonify({"error": "No se pudo obtener datos"}), 500
-    
-    
-    
-@app.route('/crear-tablas-en-db-ahora')
-def crear_tablas():
-    try:
-        with app.app_context():
-            db.create_all()
-        return "<h1>tablas creadas</h1>"
-    except Exception as e:
-        return f"<h1>Error al crear las tablas: {e}</h1>"
