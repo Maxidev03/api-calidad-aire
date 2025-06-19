@@ -122,7 +122,7 @@ def send_notifications_to_all(gas_level):
             except Exception as e:
                 print(f"Error general al procesar suscripción: {e}")
 
-"""
+
 @app.route('/crear-tablas-en-db-ahora')
 def crear_tablas():
     try:
@@ -131,4 +131,3 @@ def crear_tablas():
         return "<h1>¡Las tablas han sido creadas exitosamente!</h1>"
     except Exception as e:
         return f"<h1>Ocurrió un error al crear las tablas: {e}</h1>"
-"""
